@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Recommendation System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clothing Recommendation System</h1>
+        <form id="recommendation-form">
+            <label for="style">Preferred Style:</label>
+            <input type="text" id="style" name="style" required>
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+            </select>
+            <label for="occasion">Occasion:</label>
+            <input type="text" id="occasion" name="occasion" required>
+            <button type="submit">Get Recommendations</button>
+        </form>
+        <div id="recommendations"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
